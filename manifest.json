@@ -1,0 +1,21 @@
+{
+  "name": "Clear page",
+  "version": "1.0",
+  "description": "clear some page element",
+  "manifest_version": 2,
+
+  "permissions": [ "storage", "activeTab" ],
+
+  "content_scripts": [
+    {
+      "matches": [ "https://*.docs.blender.org/*" ],
+      "css": [ "docs-blender.css" ]
+    },
+    {
+      "matches": [ "https://*.yandex.ru/*" ],
+      "css": [ "ya.css" ],
+      "js": [ "ya.js" ]
+    }
+  ]
+
+}
